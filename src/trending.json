@@ -1,0 +1,110 @@
+{
+    "coins": [
+      {
+        "item": {
+          "id": "waultswap-polygon",
+          "coin_id": 16282,
+          "name": "WaultSwap Polygon",
+          "symbol": "WEXPOLY",
+          "market_cap_rank": 363,
+          "thumb": "https://assets.coingecko.com/coins/images/16282/thumb/ws_purple_circle_200x200_%281%29.png?1623639146",
+          "small": "https://assets.coingecko.com/coins/images/16282/small/ws_purple_circle_200x200_%281%29.png?1623639146",
+          "large": "https://assets.coingecko.com/coins/images/16282/large/ws_purple_circle_200x200_%281%29.png?1623639146",
+          "slug": "waultswap-polygon",
+          "price_btc": 0.0000013148373579491828,
+          "score": 0
+        }
+      },
+      {
+        "item": {
+          "id": "matic-network",
+          "coin_id": 4713,
+          "name": "Polygon",
+          "symbol": "MATIC",
+          "market_cap_rank": 15,
+          "thumb": "https://assets.coingecko.com/coins/images/4713/thumb/matic___polygon.jpg?1612939050",
+          "small": "https://assets.coingecko.com/coins/images/4713/small/matic___polygon.jpg?1612939050",
+          "large": "https://assets.coingecko.com/coins/images/4713/large/matic___polygon.jpg?1612939050",
+          "slug": "polygon",
+          "price_btc": 0.000041977214865439244,
+          "score": 1
+        }
+      },
+      {
+        "item": {
+          "id": "shiba-inu",
+          "coin_id": 11939,
+          "name": "Shiba Inu",
+          "symbol": "SHIB",
+          "market_cap_rank": 33,
+          "thumb": "https://assets.coingecko.com/coins/images/11939/thumb/shiba.png?1622619446",
+          "small": "https://assets.coingecko.com/coins/images/11939/small/shiba.png?1622619446",
+          "large": "https://assets.coingecko.com/coins/images/11939/large/shiba.png?1622619446",
+          "slug": "shiba-inu",
+          "price_btc": 1.8142467780961844e-10,
+          "score": 2
+        }
+      },
+      {
+        "item": {
+          "id": "waultswap",
+          "coin_id": 14882,
+          "name": "WaultSwap",
+          "symbol": "WEX",
+          "market_cap_rank": 318,
+          "thumb": "https://assets.coingecko.com/coins/images/14882/thumb/WS_200x200.png?1618890232",
+          "small": "https://assets.coingecko.com/coins/images/14882/small/WS_200x200.png?1618890232",
+          "large": "https://assets.coingecko.com/coins/images/14882/large/WS_200x200.png?1618890232",
+          "slug": "waultswap",
+          "price_btc": 0.000001073946496215239,
+          "score": 3
+        }
+      },
+      {
+        "item": {
+          "id": "gerowallet",
+          "coin_id": 15602,
+          "name": "GeroWallet",
+          "symbol": "GERO",
+          "market_cap_rank": 665,
+          "thumb": "https://assets.coingecko.com/coins/images/15602/thumb/PdAQXY8t_400x400.jpg?1621307751",
+          "small": "https://assets.coingecko.com/coins/images/15602/small/PdAQXY8t_400x400.jpg?1621307751",
+          "large": "https://assets.coingecko.com/coins/images/15602/large/PdAQXY8t_400x400.jpg?1621307751",
+          "slug": "gerowallet",
+          "price_btc": 0.000006516179519305089,
+          "score": 4
+        }
+      },
+      {
+        "item": {
+          "id": "qi-dao",
+          "coin_id": 15329,
+          "name": "Qi Dao",
+          "symbol": "QI",
+          "market_cap_rank": 763,
+          "thumb": "https://assets.coingecko.com/coins/images/15329/thumb/qi.png?1620540969",
+          "small": "https://assets.coingecko.com/coins/images/15329/small/qi.png?1620540969",
+          "large": "https://assets.coingecko.com/coins/images/15329/large/qi.png?1620540969",
+          "slug": "qi-dao",
+          "price_btc": 0.00006518770995430258,
+          "score": 5
+        }
+      },
+      {
+        "item": {
+          "id": "mina-protocol",
+          "coin_id": 15628,
+          "name": "Mina Protocol",
+          "symbol": "MINA",
+          "market_cap_rank": 128,
+          "thumb": "https://assets.coingecko.com/coins/images/15628/thumb/JM4_vQ34_400x400.png?1621394004",
+          "small": "https://assets.coingecko.com/coins/images/15628/small/JM4_vQ34_400x400.png?1621394004",
+          "large": "https://assets.coingecko.com/coins/images/15628/large/JM4_vQ34_400x400.png?1621394004",
+          "slug": "mina-protocol",
+          "price_btc": 0.00006835223381723685,
+          "score": 6
+        }
+      }
+    ],
+    "exchanges": []
+  }
