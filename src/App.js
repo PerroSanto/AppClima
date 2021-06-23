@@ -48,32 +48,31 @@ useEffect(() => {climaActualAPI()}, [])
             var icono = 0
            { largoVariableIcono === 1 ? icono = '0' + infoClima.WeatherIcon : icono = infoClima.WeatherIcon}
             return (
-            <div key={index} class="bg-gray-500 m-6 p-12 rounded-xl container mx-auto font-sans">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="">
-                <h1 className="text-6xl">{infoClima.Temperature.Metric.Value}º</h1>
-                </div>
-                <div className="">
-                <img src={`https://developer.accuweather.com/sites/default/files/${icono}-s.png`} alt="img" className="w-full h-full"></img>
-                </div>
-                <div className="col-span-2 text-2xl">
-                <h1>{infoClima.WeatherText}</h1>
-                </div> 
-                <div className=" col-span-2 text-xs">
-                  <h1 >Estas cerca de {location.LocalizedName}, {location.AdministrativeArea.LocalizedName},  {location.Country.LocalizedName}</h1>
+              <div key={index} class="bg-gray-500 m-6 p-12 rounded-xl container mx-auto font-sans">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <h1 className="text-6xl">{infoClima.Temperature.Metric.Value}º</h1>
+                  </div>
+                  <div>
+                    <img src={`https://developer.accuweather.com/sites/default/files/${icono}-s.png`} alt="img" className="w-full h-full"></img>
+                  </div>
+                  <div className="col-span-2 text-2xl">
+                    <h1>{infoClima.WeatherText}</h1>
+                  </div> 
+                  <div className=" col-span-2 text-xs">
+                    <h1 >Estas cerca de {location.LocalizedName}, {location.AdministrativeArea.LocalizedName},  {location.Country.LocalizedName}</h1>
+                  </div>
                 </div>
               </div>
-            </div>
-         )
+            )
         })}
 
 
 
-    </div>
-
+        </div>
         }
-      </header>
-    </div>
+        </header>
+        </div>
   );
 }
 
