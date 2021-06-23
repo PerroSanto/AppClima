@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# AcuClima
 
 Esta es una pequeña app en ReactJS que te muestra el clima en tu ciudad mediante la consulta de APIs. 
