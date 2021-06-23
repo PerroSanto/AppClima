@@ -12,17 +12,18 @@ useEffect(() => {climaActualAPI()}, [])
 
     const climaActualAPI = async () => {   
     try{
+      const APIKey = 'fTT6RDjIGJHnuoyryuxeSZSI4hM55cKg'
       const clientApi = await fetch('https://api.ipify.org?format=json');
       const clientIpJSON = await clientApi.json();
       const clientIP = clientIpJSON.ip
-      const locationApi = await fetch('http://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=fTT6RDjIGJHnuoyryuxeSZSI4hM55cKg&q=' + clientIP + '&language=es-ar');
+      const locationApi = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=${APIKey}&q=${clientIP}&language=es-ar`);
       const location = await locationApi.json();
       setUbicacion(location)
       const locationKey = location.Key
-      const api = await fetch('http://dataservice.accuweather.com/currentconditions/v1/' + locationKey + '?apikey=fTT6RDjIGJHnuoyryuxeSZSI4hM55cKg&language=es-ar');
+      const api = await fetch(`http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${APIKey}&language=es-ar`);
       const climaActual = await api.json();
       setClimaActual(climaActual)
-      const climaExtendidoAPI = await fetch('http://dataservice.accuweather.com/forecasts/v1/daily/5day/' + locationKey + '?apikey=fTT6RDjIGJHnuoyryuxeSZSI4hM55cKg&language=es-ar');
+      const climaExtendidoAPI = await fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}?apikey=${APIKey}&language=es-ar`);
       const climaExtendido = await climaExtendidoAPI.json();
       setClimaExtendido(climaExtendido)
       console.log(climaExtendido);
