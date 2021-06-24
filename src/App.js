@@ -58,7 +58,7 @@ return dayName
 //Render
 
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <h1>Acu Clima</h1>
         { ! climaActual ? <p>Cargando datos...</p> : 
