@@ -67,7 +67,7 @@ return dayName
         {climaActual.map((infoClima, index) => {
             var largoVariableIcono = `${infoClima.WeatherIcon}`.length
             var icono = 0
-           { largoVariableIcono === 1 ? icono = '0' + infoClima.WeatherIcon : icono = infoClima.WeatherIcon}
+            largoVariableIcono === 1 ? icono = '0' + infoClima.WeatherIcon : icono = infoClima.WeatherIcon
             return (
               <div key={index} className="bg-gray-500 m-6 p-12 rounded-xl container mx-auto font-sans">
                 <div className="grid grid-cols-2 gap-4">
@@ -92,9 +92,9 @@ return dayName
         <div className="grid grid-cols-5 gap-3">
 
         {climaExtendidoDiario.map((infoExtendido, index) => {
-                      var largoVariableIcono = `${infoExtendido.Day.Icon}`.length
-                      var icono = 0
-                     { largoVariableIcono === 1 ? icono = '0' + infoExtendido.Day.Icon : icono = infoExtendido.Day.Icon}
+          var largoVariableIcono = `${infoExtendido.Day.Icon}`.length
+          var icono = 0
+          largoVariableIcono === 1 ? icono = '0' + infoExtendido.Day.Icon : icono = infoExtendido.Day.Icon
           return(
             <div  key={index} className="bg-gray-600 m-4 p-6 rounded-xl container mx-auto font-sans grid gap-3 auto-cols-auto">
               <div className="text-sm text-center underline">
