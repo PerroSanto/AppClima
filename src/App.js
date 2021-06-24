@@ -69,7 +69,7 @@ return dayName
             var icono = 0
            { largoVariableIcono === 1 ? icono = '0' + infoClima.WeatherIcon : icono = infoClima.WeatherIcon}
             return (
-              <div key={index} class="bg-gray-500 m-6 p-12 rounded-xl container mx-auto font-sans">
+              <div key={index} className="bg-gray-500 m-6 p-12 rounded-xl container mx-auto font-sans">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <h1 className="text-6xl">{infoClima.Temperature.Metric.Value}ºC</h1>
@@ -81,7 +81,7 @@ return dayName
                     <h1>{infoClima.WeatherText}</h1>
                   </div> 
                   <div className=" col-span-2 text-xs">
-                    <h1 >Estas cerca de {location.LocalizedName}, {location.AdministrativeArea.LocalizedName},  {location.Country.LocalizedName}</h1>
+                    <h1 >Estas cerca de {location.LocalizedName}, {location.AdministrativeArea.LocalizedName},  {location.Country.LocalizedName}.</h1>
                   </div>
                 </div>
               </div>
@@ -96,8 +96,8 @@ return dayName
                       var icono = 0
                      { largoVariableIcono === 1 ? icono = '0' + infoExtendido.Day.Icon : icono = infoExtendido.Day.Icon}
           return(
-            <div  key={index} class="bg-gray-600 m-4 p-6 rounded-xl container mx-auto font-sans grid gap-3 auto-cols-auto">
-              <div className="text-sm text-center">
+            <div  key={index} className="bg-gray-600 m-4 p-6 rounded-xl container mx-auto font-sans grid gap-3 auto-cols-auto">
+              <div className="text-sm text-center underline">
                 <h1 >{diaDeLaSemana(infoExtendido.EpochDate)}</h1>
               </div>
               <div>
