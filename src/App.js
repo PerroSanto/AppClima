@@ -9,7 +9,7 @@ const [climaActual, setClimaActual] = useState()
 const [location, setUbicacion] = useState()
 useEffect(() => {climaActualAPI()}, []) 
 
-const APIKey = 'fTT6RDjIGJHnuoyryuxeSZSI4hM55cKg'
+const APIKey = 'AMc4kWCFvO4KidIEvGGXGcA0Hu8Oatcw'
 
 
 const climaActualAPI = async () => {   
@@ -40,13 +40,20 @@ const climaExtendidoAPI = async () => {
       const climaExtendido = await climaExtendidoApi.json();
       const climaExtendidoDiario = climaExtendido.DailyForecasts
       setClimaExtendido(climaExtendidoDiario);
-      console.log(climaExtendidoDiario);
       } catch (error) {
       console.log(error);
     }
 }; 
 
 
+function diaDeLaSemana(utcSeconds){
+  const days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+  var newDate = new Date(0);
+  var utcDate = newDate.setUTCSeconds(utcSeconds);
+  var newDateUtc = new Date(utcDate);
+  var dayName = days[newDateUtc.getDay()];
+return dayName
+};
 
 //Render
 
@@ -89,19 +96,19 @@ const climaExtendidoAPI = async () => {
                       var icono = 0
                      { largoVariableIcono === 1 ? icono = '0' + infoExtendido.Day.Icon : icono = infoExtendido.Day.Icon}
           return(
-            <div  class="bg-gray-600 m-4 p-6 rounded-xl container mx-auto font-sans grid gap-3 auto-cols-auto">
-            <div className="text-sm text-center">
-              <h1 >DATE</h1>
-            </div>
-            <div>
-              <img src={`https://developer.accuweather.com/sites/default/files/${icono}-s.png`} alt="img"></img>
-            </div>
-            <div className="text-sm text-center">
-              <h1>{infoExtendido.Temperature.Minimum.Value} / {infoExtendido.Temperature.Maximum.Value}ºC</h1>
-            </div>
+            <div  key={index} class="bg-gray-600 m-4 p-6 rounded-xl container mx-auto font-sans grid gap-3 auto-cols-auto">
+              <div className="text-sm text-center">
+                <h1 >{diaDeLaSemana(infoExtendido.EpochDate)}</h1>
+              </div>
+              <div>
+                <img src={`https://developer.accuweather.com/sites/default/files/${icono}-s.png`} alt="img"></img>
+              </div>
+              <div className="text-sm text-center">
+                <h1>{infoExtendido.Temperature.Minimum.Value} / {infoExtendido.Temperature.Maximum.Value}ºC</h1>
+              </div>
             </div>
 
-          )        
+          )         
         })}     
         </div>
         </div>
